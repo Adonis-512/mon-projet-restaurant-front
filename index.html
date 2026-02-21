@@ -1,254 +1,194 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>Le Prestige | Restaurant Chic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Google Font Luxe -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="others/logo_prestige.png" alt="Logo Le Prestige" height="50" class="logo">
+          <span class="brand-name">Le Prestige</span>
+        </a>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-      <img src="others/logo_prestige.png" alt="Logo Le Prestige" height="50" class="logo">
-      <span class="brand-name">Le Prestige</span>
-    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+          aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="menuNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#hero">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-        <li class="nav-item"><a class="nav-link" href="#reservation">Réservation</a></li>
-        <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="hero" class="hero text-center text-white">
-  <div class="container">
-    <h1 class="hero-title">Expérience Gastronomique Unique</h1>
-    <p class="hero-subtitle">Cuisine raffinée • Ambiance élégante</p>
-    <a href="#reservation" class="btn btn-gold btn-lg mt-3">Réserver</a>
-  </div>
-</section>
-
-<!-- MENU -->
-<section id="menu" class="py-5">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">Notre Menu</h2>
-
-    <div class="row g-4">
-
-      <!-- Plat 1 -->
-      <div class="col-md-4">
-        <div class="card menu-card shadow-sm">
-          <img src="others/menu/croque monsieur.jpg" class="card-img-top" alt="Croque Monsieur">
-          <div class="card-body text-center">
-            <h5>Croque Monsieur Prestige</h5>
-            <p>Spécialité maison revisitée</p>
-            <span class="price">20k</span>
-          </div>
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#hero">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reservation">Réservation</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <!-- Plat 2 -->
-      <div class="col-md-4">
-        <div class="card menu-card shadow-sm">
-          <img src="others/menu/gratin.jpg" class="card-img-top" alt="Gratin">
-          <div class="card-body text-center">
-            <h5>Gratin Maison</h5>
-            <p>Produit local sélectionné</p>
-            <span class="price">15k</span>
-          </div>
-        </div>
+  <!-- HERO -->
+  <main>
+    <section id="hero" class="hero d-flex align-items-center text-center text-white"
+      >
+      <div class="container">
+        <h1 class="display-4 fw-bold hero-title">Expérience Gastronomique Unique</h1>
+        <p class="lead hero-subtitle">Cuisine raffinée • Ambiance élégante</p>
+        <a href="#reservation" class="btn btn-warning btn-lg mt-3">Réserver</a>
       </div>
+    </section>
 
-      <!-- Plat 3 -->
-      <div class="col-md-4">
-        <div class="card menu-card shadow-sm">
-          <img src="others/menu/rice.webp" class="card-img-top" alt="Riz">
-          <div class="card-body text-center">
-            <h5>Riz Prestige</h5>
-            <p>Création artisanale</p>
-            <span class="price">10k</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   
-
-    <!-- CONTENU CACHÉ -->
-    <div class="collapse mt-4" id="extraMenu">
-      <div class="row g-4">
-
-        <div class="col-md-4">
-          <div class="card menu-card shadow-sm">
-            <img src="others/menu/soupe legume.jpg" class="card-img-top" alt="Soupe">
-            <div class="card-body text-center">
-              <h5>Soupe Prestige</h5>
-              <p>Nouvelle recette du chef</p>
-              <span class="price">12k</span>
+    <!-- MENU -->
+    <section id="menu" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Notre Menu</h2>
+        <div class="row g-4">
+          <!-- Réutiliser un template de card avec boucle si back-end -->
+          <div class="col-md-4">
+            <div class="card menu-card shadow-sm h-100">
+              <img src="others/menu/croque monsieur.jpg" class="card-img-top" alt="Croque Monsieur">
+              <div class="card-body text-center">
+                <h5 class="card-title">Croque Monsieur Prestige</h5>
+                <p class="card-text">Spécialité maison revisitée</p>
+                <span class="fw-bold">20k Ar</span>
+              </div>
             </div>
           </div>
-        </div>
-<section id="galerie" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">Galerie</h2>
-
-    <div class="row g-4">
-
-      <div class="col-md-4">
-        <div class="gallery-item">
-          <img src="others/gallery1.jpg" class="img-fluid rounded" alt="">
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="gallery-item">
-          <img src="others/gallery2.jpg" class="img-fluid rounded" alt="">
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="gallery-item">
-          <img src="others/gallery3.jpg" class="img-fluid rounded" alt="">
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-        <div class="col-md-4">
-          <div class="card menu-card shadow-sm">
-            <img src="others/menu/dessert.avif" class="card-img-top" alt="Dessert">
-            <div class="card-body text-center">
-              <h5>Dessert Mixte</h5>
-              <p>Œuvre artisanale</p>
-              <span class="price">8k</span>
+          <div class="col-md-4">
+            <div class="card menu-card shadow-sm h-100">
+              <img src="others/menu/gratin.jpg" class="card-img-top" alt="Gratin">
+              <div class="card-body text-center">
+                <h5 class="card-title">Gratin Maison</h5>
+                <p class="card-text">Produit local sélectionné</p>
+                <span class="fw-bold">15k Ar</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card shadow-sm h-100">
+              <img src="others/menu/rice.webp" class="card-img-top" alt="Riz">
+              <div class="card-body text-center">
+                <h5 class="card-title">Riz Prestige</h5>
+                <p class="card-text">Création artisanale</p>
+                <span class="fw-bold">10k Ar</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card menu-card shadow-sm">
-            <img src="others/menu/jus special.jpg" class="card-img-top" alt="Jus">
-            <div class="card-body text-center">
-              <h5>Jus Naturel</h5>
-              <p>Fraîcheur garantie</p>
-              <span class="price">1k</span>
+        <div class="text-center mt-4">
+          <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#extraMenu">Voir plus</button>
+        </div>
+
+        <div class="collapse mt-4" id="extraMenu">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card menu-card shadow-sm h-100">
+                <img src="others/menu/soupe legume.jpg" class="card-img-top" alt="Soupe">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Soupe Prestige</h5>
+                  <p class="card-text">Nouvelle recette du chef</p>
+                  <span class="fw-bold">12k Ar</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card shadow-sm h-100">
+                <img src="others/menu/dessert.avif" class="card-img-top" alt="Dessert">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Dessert Mixte</h5>
+                  <p class="card-text">Œuvre artisanale</p>
+                  <span class="fw-bold">8k Ar</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card shadow-sm h-100">
+                <img src="others/menu/jus special.jpg" class="card-img-top" alt="Jus">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Jus Naturel</h5>
+                  <p class="card-text">Fraîcheur garantie</p>
+                  <span class="fw-bold">1k Ar</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
+    </section>
+
+    <!-- RESERVATION -->
+    <section id="reservation" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Réserver une table</h2>
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Nom complet" required>
+            <div class="invalid-feedback">Veuillez entrer votre nom.</div>
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Email" required>
+            <div class="invalid-feedback">Veuillez entrer un email valide.</div>
+          </div>
+          <div class="col-md-6">
+            <input type="date" class="form-control" required>
+            <div class="invalid-feedback">Sélectionnez une date.</div>
+          </div>
+          <div class="col-md-6">
+            <input type="time" class="form-control" required>
+            <div class="invalid-feedback">Sélectionnez un horaire.</div>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-warning px-5">Confirmer</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section id="galerie" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Galerie</h2>
+        <div class="row g-4">
+          <div class="col-md-4"> <img src="https://media.gettyimages.com/id/1494295938/fr/photo/jeune-femme-souriante-mangeant-du-pudding-au-pour-le-petit-d%C3%A9jeuner-au-caf%C3%A9.jpg?s=612x612&w=0&k=20&c=Rb2yfjfkPhxxUl885o8ozvmgCuDYKg2A2F0swRxzIps=" class="img-fluid rounded"> </div> <div class="col-md-4"> <img src="https://us.123rf.com/450wm/ufabizphoto/ufabizphoto2009/ufabizphoto200905030/155187767-les-gens-qui-mangent-des-hamburgers-et-une-autre-malbouffe-au-snack-bar.jpg?ver=6" class="img-fluid rounded"> </div> <div class="col-md-4"> <img src="https://media.istockphoto.com/id/1198049220/fr/photo/qui-a-command%C3%A9-cette-main.jpg?s=612x612&w=0&k=20&c=1_551pt_9OXS4rKtTOIyuU9oNXEWyHilUgipwTo8_Zc=" class="img-fluid rounded"> </div> </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container text-center">
+      <h5 class="mb-3">Le Prestige</h5>
+      <div class="d-flex justify-content-center gap-4 mb-3">
+        <a href="https://facebook.com/tonprofil" target="_blank" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+        <a href="https://wa.me/261340000000" target="_blank" class="text-white fs-4"><i class="bi bi-whatsapp"></i></a>
+        <a href="tel:+261340000000" class="text-white fs-4"><i class="bi bi-telephone-fill"></i></a>
+      </div>
+      <p class="small mb-0">© 2026 Le Prestige • Restaurant Chic</p>
     </div>
-     <!-- BOUTON VOIR PLUS -->
-    <div class="text-center mt-4">
-      <button class="btn btn-gold" data-bs-toggle="collapse" data-bs-target="#extraMenu">
-        Voir plus
-      </button>
-    </div>
+  </footer>
 
-  </div>
-</section>
-
-
-<!-- RESERVATION -->
-<section id="reservation" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title text-center mb-4">Réserver une table</h2>
-
-    <form class="row g-3">
-      <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="Nom complet" required>
-      </div>
-
-      <div class="col-md-6">
-        <input type="email" class="form-control" placeholder="Email" required>
-      </div>
-
-      <div class="col-md-6">
-        <input type="date" class="form-control" required>
-      </div>
-
-      <div class="col-md-6">
-        <input type="time" class="form-control" required>
-      </div>
-
-      <div class="col-12 text-center">
-        <button type="submit" class="btn btn-gold px-5">Confirmer</button>
-      </div>
-    </form>
-  </div>
-</section>
- <!--FOOTER -->
-<section id="galerie" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">Galerie</h2>
-
-    <div class="row g-4">
-
-      <div class="col-md-4"> <img src="https://media.gettyimages.com/id/1494295938/fr/photo/jeune-femme-souriante-mangeant-du-pudding-au-pour-le-petit-d%C3%A9jeuner-au-caf%C3%A9.jpg?s=612x612&w=0&k=20&c=Rb2yfjfkPhxxUl885o8ozvmgCuDYKg2A2F0swRxzIps=" class="img-fluid rounded"> </div> 
-      <div class="col-md-4"> <img src="https://us.123rf.com/450wm/ufabizphoto/ufabizphoto2009/ufabizphoto200905030/155187767-les-gens-qui-mangent-des-hamburgers-et-une-autre-malbouffe-au-snack-bar.jpg?ver=6" class="img-fluid rounded"> </div> 
-      <div class="col-md-4"> <img src="https://media.istockphoto.com/id/1198049220/fr/photo/qui-a-command%C3%A9-cette-main.jpg?s=612x612&w=0&k=20&c=1_551pt_9OXS4rKtTOIyuU9oNXEWyHilUgipwTo8_Zc=" class="img-fluid rounded"> </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer text-center text-white py-4">
-  <div class="container">
-
-    <h5 class="mb-3">Le Prestige</h5>
-
-    <div class="d-flex justify-content-center gap-4 mb-3 social-icons">
-
-      <!-- Facebook -->
-      <a href="https://facebook.com/tonprofil" target="_blank" class="social-link">
-        <i class="bi bi-facebook"></i>
-      </a>
-
-      <!-- WhatsApp -->
-      <a href="https://wa.me/261340000000" target="_blank" class="social-link">
-        <i class="bi bi-whatsapp"></i>
-      </a>
-
-      <!-- Téléphone -->
-      <a href="tel:+261340000000" class="social-link">
-        <i class="bi bi-telephone-fill"></i>
-      </a>
-
-    </div>
-
-    <p class="small mb-0">© 2026 Le Prestige • Restaurant Chic</p>
-
-  </div>
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
